@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title> Student Details</title>
+    </head>
+    <body>
+        <div>
+            <h4> Hi {{ display_name}}, this is your student details page.</h4>
+            {% for i in student_details %}
+            <p>Name: {{i.name}}</p>
+            <p>Branch: {{i.branch}}</p>
+            <p>Year: {{i.year}}</p>
+            <p>Mobile Number: {{i.mobile_number}}</p>
+            <p>Email Id: {{i.email_id}}</p>
+            {% endfor%}
+        </div>
+    </body>
+</html>
